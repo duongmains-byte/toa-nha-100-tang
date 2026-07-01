@@ -145,11 +145,23 @@ HP:
 
 <div class="battle-buttons">
 
-<button onclick="attackMonster()">
+<button onclick="attackBoss()">
 ⚔️ Tấn Công
 </button>
 
-<button onclick="healPlayer()">
+<button function healPlayer(){
+
+    player.hp += 50;
+
+    if(player.hp > getTotalHp()){
+        player.hp = getTotalHp();
+    }
+
+    updatePlayerUI();
+
+    writeLog("Hồi 50 HP");
+
+}>
 🧪 Hồi Máu
 </button>
 
