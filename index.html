@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tòa Nhà 100 Tầng Sinh Tử</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+<h1>🏢 TÒA NHÀ 100 TẦNG SINH TỬ</h1>
+<p>Leo lên tầng 100 và đánh bại Thần Tháp.</p>
+</header>
+
+<div class="main-grid">
+
+<div class="left-panel">
+
+<section class="card">
+<h2>👤 Nhân Vật</h2>
+
+<p>Level: <span id="level">1</span></p>
+<p>EXP: <span id="exp">0</span>/<span id="needExp">50</span></p>
+
+<p>HP:
+<span id="playerHp">100/100</span>
+</p>
+
+<div class="bar">
+<div id="playerBar" class="fill green"></div>
+</div>
+
+<p>Công:
+<span id="atk">10</span>
+</p>
+
+<p>Phòng Thủ:
+<span id="def">0</span>
+</p>
+
+<p>Vàng:
+<span id="gold">0</span>
+</p>
+
+<p>Kim Cương:
+<span id="gem">0</span>
+</p>
+</section>
+
+<section class="card">
+<h2>🌟 Thiên Phú</h2>
+
+<p>
+<span id="talentName">
+Chưa Thức Tỉnh
+</span>
+</p>
+
+<p id="talentDesc">
+Không có mô tả.
+</p>
+</section>
+
+<section class="card">
+<h2>🧙 Kỹ Năng</h2>
+
+<div id="skillList">
+
+<button class="skill-btn">
+Hỏa Cầu
+</button>
+
+<button class="skill-btn">
+Lôi Kích
+</button>
+
+<button class="skill-btn">
+Hồi Phục
+</button>
+
+</div>
+</section>
+
+<section class="card">
+<h2>⚔️ Trang Bị</h2>
+
+<p>Vũ Khí:
+<span id="weaponName">
+Không Có
+</span>
+</p>
+
+<p>Giáp:
+<span id="armorName">
+Không Có
+</span>
+</p>
+
+<p>Nhẫn:
+<span id="ringName">
+Không Có
+</span>
+</p>
+
+<p>Dây Chuyền:
+<span id="necklaceName">
+Không Có
+</span>
+</p>
+
+</section>
+
+</div>
+
+<div class="center-panel">
+
+<section class="card battle-card">
+
+<h2>
+🏢 Tầng
+<span id="floor">1</span>
+</h2>
+
+<h3 id="monsterName">
+Goblin
+</h3>
+
+<p>
+HP:
+<span id="monsterHp">
+30/30
+</span>
+</p>
+
+<div class="bar">
+<div id="monsterBar" class="fill red"></div>
+</div>
+
+<div class="battle-buttons">
+
+<button onclick="attackMonster()">
+⚔️ Tấn Công
+</button>
+
+<button onclick="healPlayer()">
+🧪 Hồi Máu
+</button>
+
+<button onclick="saveGame()">
+💾 Lưu
+</button>
+
+</div>
+
+</section>
+
+<section class="card">
+
+<h2>📜 Nhật Ký</h2>
+
+<div id="log">
+
+</div>
+
+</section>
+
+</div>
+
+<div class="right-panel">
+
+<section class="card">
+
+<h2>🎒 Túi Đồ</h2>
+
+<div id="inventory">
+Chưa có vật phẩm.
+</div>
+
+</section>
+
+<section class="card">
+
+<h2>🏪 Cửa Hàng</h2>
+
+<div id="shop">
+
+<button>
+Thuốc Máu
+</button>
+
+<button>
+Rương Trang Bị
+</button>
+
+<button>
+Đá Cường Hóa
+</button>
+
+</div>
+
+</section>
+
+<section class="card">
+
+<h2>🏆 Bảng Xếp Hạng</h2>
+
+<div id="leaderboard">
+
+<p>Chưa có dữ liệu.</p>
+
+</div>
+
+</section>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="bosses.js"></script>
+
+<script src="items.js"></script>
+
+<script src="skills.js"></script>
+
+<script src="game.js"></script>
+
+</body>
+</html>
