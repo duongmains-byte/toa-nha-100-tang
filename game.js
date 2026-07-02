@@ -368,7 +368,6 @@ expReward +
 dropRandomItem();
 player.floor++;
 
-updateCooldowns();
 
 updateLeaderboard();
 
