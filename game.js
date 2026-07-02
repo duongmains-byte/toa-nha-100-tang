@@ -1145,3 +1145,16 @@ container.appendChild(btn);
 );
 
 }
+function healPlayer(){
+
+    player.hp += 50;
+
+    if(player.hp > getTotalHp()){
+        player.hp = getTotalHp();
+    }
+
+    updatePlayerUI();
+
+    writeLog("Hồi 50 HP");
+
+}
