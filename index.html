@@ -128,18 +128,16 @@ Không Có
 <span id="playerFloor">1</span>
 </h2>
 
-<h3 id="bossName">
-Goblin
-</h3>
+<h3 id="bossName">Goblin</h3>
 
 <p>
 HP:
-<span id="bossHp">
-<p>ATK:
-<span id="bossAtk">0</span>
+<span id="bossHp">30</span>
 </p>
-30/30
-</span>
+
+<p>
+ATK:
+<span id="bossAtk">0</span>
 </p>
 
 <div class="bar">
@@ -155,19 +153,6 @@ HP:
 <button onclick="healPlayer()">
 🧪 Hồi Máu
 </button>
-function healPlayer(){
-
-player.hp += 50;
-
-if(player.hp > getTotalHp()){
-player.hp = getTotalHp();
-}
-
-updatePlayerUI();
-
-writeLog("Hồi 50 HP");
-
-}
 
 <button onclick="saveGame()">
 💾 Lưu
